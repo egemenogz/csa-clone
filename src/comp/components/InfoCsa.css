@@ -1,0 +1,51 @@
+.row {
+  margin: 0;
+}
+
+.stats .stats-icon img {
+  vertical-align: middle;
+}
+
+.stats .stats-icon img:hover {
+  vertical-align: middle;
+}
+
+.stats {
+  position: sticky;
+  color: #666;
+  max-width: 282px;
+  margin: 0 auto;
+}
+
+.stats:hover {
+  img {
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 6.4px -1px #13102208, 0 4.4px 12px -1px #1310220f;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transition: all .3s ease-in-out;
+  }
+}
+
+.stats-icon {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+
+.stats-title {
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.stats-description {
+    font-style: 1rem;
+}

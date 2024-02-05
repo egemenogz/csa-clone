@@ -1,0 +1,43 @@
+.navbarBot {
+  width: 100%;
+  height: 4rem;
+  background: #005bab;
+}
+
+.navLink {
+  color: white !important;
+  border-radius: 6px 6px 0 0;
+  border: none;
+  padding: 1.25rem;
+  text-decoration: none;
+}
+
+@media (min-width: 991px) {
+  .navLink:hover {
+    color: #005bab !important;
+    border-radius: 6px 6px 0 0;
+    border: none;
+    padding: 1.25rem;
+    background: #fff;
+  }
+}
+
+@media (max-width: 990px) {
+  .navbar-toggler {
+    position: absolute;
+    top: 1.3rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 3.4rem;
+    height: 2.5rem;
+    background-color: #fff;
+  }
+
+  .navbar-collapse .navbar-nav {
+    background: #005bab;
+    display: block;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+  }
+}

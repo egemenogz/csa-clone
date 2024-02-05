@@ -1,0 +1,146 @@
+
+.menu-header {
+    color: #005bab;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.logo img {
+    width: 90px;
+    height: 60px;
+}
+
+.menu-header ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.menu-header a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0.3rem;
+}
+
+.search-product {
+    max-width: 28rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px 25px;
+    border: 2px solid #005bab;
+    gap: 0.3rem;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.search-product input {
+    position: relative;
+    width: 24rem;
+    border: none;
+    border-radius: 25px 25px;
+    appearance: none;
+    outline: none;
+    font-style: 14px;
+    padding: 5px 10px;
+}
+
+.search-product input:focus::placeholder {
+    color: transparent;
+}
+
+.search-product input::placeholder {
+    color: rgb(117, 117, 116);
+    transition: color 0.3s ease;
+}
+
+.search-product button {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 49%;
+    border: none;
+    background-color: #ffffff;
+}
+
+.navbar-right {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 12rem;
+    height: 3rem;
+    border: none;
+    border-radius: 25px 25px;
+}
+
+.navbar-right li a {
+    border-radius: 25px;
+    height: 2.5rem;
+    width: 4rem;
+}
+.navbar-right li .log:hover {
+    border-radius: 25px;
+    height: 2.5rem;
+    width: 4rem;
+    color: #ececec;
+    background: #175fa6;
+}
+
+.navbar-right ul .log {
+    color:#ffffff;
+    background: #005bab;
+}
+
+.navbar-right ul .active {
+    color:#ffffff;
+    background: #005bab;
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 1250px) {
+    nav {
+        display: block;
+        padding: 0;
+    }
+    nav .search-product button {
+        display: inline-block;
+        padding: 0 1rem 0 0;
+    }
+    nav .search-product {
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+    }
+    nav .search-product input {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    nav {
+        display: block;
+        padding: 0;
+    }
+    nav .search-product button {
+        display: inline-block;
+        padding: .5rem 1rem 0 2rem;
+    }
+    nav .search-product {
+        border: none;
+    }
+    nav .search-product input {
+        visibility: hidden;
+    }
+}
