@@ -54,10 +54,10 @@ export default function FooterCsa() {
                 </ul>
               </div>
               <div className="footer-nav-box">
-                <h3>Egemen Oguz</h3>
+                <h3>This Website is a Clone</h3>
                 <ul>
                   <li>
-                    <a>Keep going on</a>
+                    <a href="https://www.carrefoursaexport.com/en" target="_blank" style={{textDecoration:"none", color:"white"}}>CarrefourSA Export</a>
                   </li>
                 </ul>
               </div>
@@ -88,10 +88,16 @@ export default function FooterCsa() {
             <div className="social">
               <ul>
                 <li>
-                  <a href="https://github.com/egemenogz" target="_blank">
-                    <img src="https://www.carrefoursaexport.com//Templates/template-1/wwwroot/svg/icon-linkedin-white-3bbf966f.svg" alt="linkedIn" />
+                  <a
+                    href="https://www.linkedin.com/in/egemen-o%C4%9Fuz-%C3%B6ztel-a2097818a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank"
+                  >
+                    <img
+                      src="https://www.carrefoursaexport.com//Templates/template-1/wwwroot/svg/icon-linkedin-white-3bbf966f.svg"
+                      alt="linkedIn"
+                    />
                   </a>
-                  </li>
+                </li>
               </ul>
             </div>
           </div>

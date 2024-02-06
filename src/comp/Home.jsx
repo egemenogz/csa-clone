@@ -1,5 +1,4 @@
 import Carousel from "./components/Carousel";
-import FooterCsa from "./components/FooterCsa";
 import InfoCsa from "./components/InfoCsa";
 
 export default function Home() {
@@ -7,7 +6,6 @@ export default function Home() {
     <>
       <Carousel />
       <InfoCsa />
-      <FooterCsa />
     </>
   );
 }

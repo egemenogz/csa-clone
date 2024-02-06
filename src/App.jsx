@@ -2,6 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./comp/Header";
 import Home from "./comp/Home";
+import FooterCsa from "./comp/components/FooterCsa";
 import Login from "./comp/Login";
 import Signup from "./comp/Signup";
 import AllCategories from "./comp/categories/AllCategories"
@@ -22,6 +23,7 @@ function App() {
           <Route path="//all%categories" element={<AllCategories />} />
         </Routes>
       </div>
+      <FooterCsa />
     </>
   );
 }
