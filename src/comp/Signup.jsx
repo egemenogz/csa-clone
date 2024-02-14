@@ -7,34 +7,50 @@ import { Container } from "react-bootstrap";
 
 export default function Signup() {
   const [validated, setValidated] = useState(false);
-
+  const [btnDisabled, setBtnDisabled] = useState(true);
 
   const handleSubmit = (event) => {
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
-    } 
+      setBtnDisabled(true);
+    } else {
+      setBtnDisabled(false);
+      event.preventDefault();
+    }
     setValidated(true);
-  }
-    
+  };
+
+  const btnNavigate = () => {
+    console.log("navigating")
+    window.location.href="./log-in";
+  };
+
+  const styles = {
+    backgroundColor: "grey",
+    border: "none",
+  };
+
   return (
     <div
       className="signup"
       style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
         maxWidth: "1320px",
+        margin: "3rem auto",
       }}
     >
-      <Container style={{ padding: "6.4rem" }}>
+      <Container
+        style={{
+          padding: "7.8rem",
+        }}
+      >
         <Row>
           <Col lg={3}>
-            <ul>
+            <ul style={{ listStyle: "none", fontSize: "1rem" }}>
               <li>
-                <a>
-                  <span>Business Information</span>
+                <a style={{ display: "flex" }}>
+                  <span>Accounter Information</span>
                 </a>
               </li>
             </ul>
@@ -84,7 +100,17 @@ export default function Signup() {
                   feedbackType="invalid"
                 />
               </Form.Group>
-              <Button type="submit">Submit form</Button>
+              <Button style={{ marginRight: "1rem" }} type="submit">
+                Submit form
+              </Button>
+              <Button
+                type="submit"
+                style={btnDisabled ? styles : { background: "primary" }}
+                disabled={btnDisabled}
+                onClick={btnNavigate}
+              >
+                to Log in
+              </Button>
             </Form>
           </Col>
         </Row>
