@@ -3,7 +3,12 @@
 
 There is a link to visit website; Link: https://csa-clone.vercel.app
 
-# Extension used
+# CSA Clone About
+
+- CSA Clone is an e-commarce website project
+- Based on functions and responsive design
+
+# Features used
 - React Hooks
 - React Router
 - React Bootstrap
