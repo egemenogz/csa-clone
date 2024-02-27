@@ -15,6 +15,3 @@ There is a link to visit website; Link: https://csa-clone.vercel.app
 - Fontawesome
 
 This website is a clone by original 'https://www.carrefoursaexport.com/en'
-
-This website is a clone by original 'https://www.carrefoursaexport.com/en'
-
