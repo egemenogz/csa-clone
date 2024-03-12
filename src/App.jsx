@@ -5,7 +5,8 @@ import Home from "./comp/Home";
 import FooterCsa from "./comp/components/FooterCsa";
 import Login from "./comp/Login";
 import Signup from "./comp/Signup";
-import AllCategories from "./comp/categories/AllCategories"
+import AllCategories from "./comp/categories/AllCategories";
+import DryFood from "./comp/categories/DryFood";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import HeadBottom from "./comp/HeadBottom";
@@ -21,6 +22,7 @@ function App() {
           <Route path="/sign-up" element={<Signup />} />
           <Route path="/log-in" element={<Login />} />
           <Route path="//all%categories" element={<AllCategories />} />
+          <Route path="//dry&food" element={<DryFood />} />
         </Routes>
       </div>
       <FooterCsa />

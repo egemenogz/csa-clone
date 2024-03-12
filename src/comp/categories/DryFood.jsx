@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function AllCategories() {
+export default function DryFood() {
   const styles = {
     minHeight:"100vh",
     padding:"1rem 8rem",
@@ -10,7 +10,7 @@ export default function AllCategories() {
   return (
     <div className="container" style={styles}>
       <div>
-        I AM ALL CATEGORIES AND THIS IS MY LOREM
+        I AM DRY FOOD AND LOREM
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, non.
         Ipsam voluptatibus in mollitia, quasi, facilis sequi quas expedita magni
         reprehenderit doloribus sit similique esse minus, reiciendis at vel modi
