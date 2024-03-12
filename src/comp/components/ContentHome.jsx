@@ -1,5 +1,5 @@
 import "./ContentHome.css";
-import AllCatepic from "../../assets/AllCatepic.jpg";
+import AllCatePic from "../../assets/AllCatePic.jpg";
 import csaDummy from "../../assets/carrefour-dummy.jpeg";
 import { Container } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
@@ -21,7 +21,7 @@ export default function ContentHome() {
 
           <Row md={12} className="category-col">
             <Col mb={3}>
-              <img src={AllCatepic} />
+              <img src={AllCatePic} />
             </Col>
             <Col mb={9}>
               <Row>
