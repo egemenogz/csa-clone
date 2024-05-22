@@ -14,7 +14,7 @@ export default function ContentHome() {
         <Container>
           <div className="title-category">
             <h3>All Categories</h3>
-            <a href="/all%categories" path="/all%categories">
+            <a href="/all%categories">
               see all
             </a>
           </div>

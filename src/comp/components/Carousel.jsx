@@ -1,33 +1,36 @@
-import Carousel from "react-bootstrap/Carousel";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import React from "react";
+import Slider from "react-slick";
 import CSAbasket from "../../assets/CSAbasket.jpg";
 import CSAmap from "../../assets/CSAmap.jpg";
 import CSAvariety from "../../assets/CSAvariety.jpg";
 import CSAwide from "../../assets/CSAwide.jpg";
 
 function DarkVariantExample() {
+  let settings = {
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    speed: 750,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
-    <Carousel data-bs-theme="dark" style={{zIndex:"-1"}}>
-      <Carousel.Item>
+    <Slider data-bs-theme="dark" {...settings} style={{ zIndex: "-1" }}>
+      <div>
         <img className="d-block w-100" src={CSAbasket} alt="First slide" />
-        <Carousel.Caption></Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
+      </div>
+      <div>
         <img className="d-block w-100" src={CSAmap} alt="Second slide" />
-        <Carousel.Caption></Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
+      </div>
+      <div>
         <img className="d-block w-100" src={CSAvariety} alt="Third slide" />
-        <Carousel.Caption>
-          <p>https://github.com/egemenogz/</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
+      </div>
+      <div>
         <img className="d-block w-100" src={CSAwide} alt="Third slide" />
-        <Carousel.Caption>
-          <p>https://github.com/egemenogz/</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+      </div>
+    </Slider>
   );
 }
 

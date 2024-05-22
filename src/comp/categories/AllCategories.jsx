@@ -1,28 +1,59 @@
-import React from "react";
 
-export default function AllCategories() {
-  const styles = {
-    minHeight:"100vh",
-    padding:"1rem 8rem",
-    display:"flex",
-    flexRow:"column"
-  }
+import AllCatePic from "../../assets/AllCatePic.jpg";
+import csaDummy from "../../assets/carrefour-dummy.jpeg";
+import { Container } from "react-bootstrap";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+
+export default function ContentHome() {
+  
+
   return (
-    <div className="container" style={styles}>
-      <div>
-        I AM ALL CATEGORIES AND THIS IS MY LOREM
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, non.
-        Ipsam voluptatibus in mollitia, quasi, facilis sequi quas expedita magni
-        reprehenderit doloribus sit similique esse minus, reiciendis at vel modi
-        impedit repellat fugiat officiis odio numquam atque magnam! Nostrum
-        dolore similique eos quasi aspernatur, odio sunt amet aperiam ipsum
-        sint? Beatae soluta, ut ab officiis ipsam hic reiciendis unde nisi
-        blanditiis! Nobis quae quos veniam quo totam alias praesentium vel
-        dolores dolorum aperiam quam, accusamus reiciendis eum rem delectus illo
-        quidem fugiat, odit iusto suscipit omnis, enim ex. Nostrum nemo dolorum
-        quaerat laboriosam rem perferendis repellendus natus, ab, quam laborum
-        consequuntur incidunt.
+    <>
+      <div className="container">
+        <Container>
+          <div className="title-category">
+            <h3>All Categories</h3>
+            <a href='/'>
+              see all
+            </a>
+          </div>
+
+          <Row md={12} className="category-col">
+            <Col mb={3}>
+              <img src={AllCatePic} />
+            </Col>
+            <Col mb={9}>
+              <Row>
+                <Card style={{ width: "16rem", marginRight: "2rem" }}>
+                  <img src={csaDummy} alt="..." />
+                  <Card.Body>
+                    <Card.Title>Product Title</Card.Title>
+                    <Card.Text>
+                      <p>Quantity of pallets </p>
+                      <p>Quantity of boxex</p>
+                    </Card.Text>
+                    <Button variant="primary">Add to Cart</Button>
+                  </Card.Body>
+                </Card>
+                <Card style={{ width: "16rem" }}>
+                  <img src={csaDummy} alt="..." />
+                  <Card.Body>
+                    <Card.Title>Product Title</Card.Title>
+                    <Card.Text>
+                      <p>Quantity of pallets </p>
+                      <p>Quantity of boxex</p>
+                    </Card.Text>
+                    <Button variant="primary">Add to Cart</Button>
+                  </Card.Body>
+                </Card>
+              </Row>
+            </Col>
+          </Row>
+        </Container>
       </div>
-    </div>
+    </>
   );
 }
